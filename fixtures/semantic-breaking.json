@@ -1,0 +1,26 @@
+{
+  "version": "2.1",
+  "source": "https://github.com/ansabroh/APIContractIQ/tree/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "operations": {
+    "GET /users": {
+      "parameters": {
+        "query:limit": {
+          "type": "integer",
+          "required": false
+        }
+      },
+      "response": {
+        "id": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "deprecated": false
+    }
+  },
+  "documents": {
+    "behavior": "Returns user identifiers as strings. The limit parameter now means thousands of users, rather than individual users.",
+    "changelog": "The meaning of limit changed from number of users to thousands of users.",
+    "migration": "Existing callers must divide their limit by one thousand."
+  }
+}

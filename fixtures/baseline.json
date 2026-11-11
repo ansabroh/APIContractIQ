@@ -1,0 +1,26 @@
+{
+  "version": "1.0",
+  "source": "https://github.com/ansabroh/APIContractIQ/tree/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "operations": {
+    "GET /users": {
+      "parameters": {
+        "query:limit": {
+          "type": "integer",
+          "required": false
+        }
+      },
+      "response": {
+        "id": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "deprecated": false
+    }
+  },
+  "documents": {
+    "behavior": "Returns user identifiers as strings. Existing callers continue to work.",
+    "changelog": "No behavior changes in this release.",
+    "migration": "No migration is required for existing callers."
+  }
+}

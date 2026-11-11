@@ -1,0 +1,26 @@
+{
+  "version": "1.3",
+  "source": "https://github.com/ansabroh/APIContractIQ/tree/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "operations": {
+    "GET /users": {
+      "parameters": {
+        "query:limit": {
+          "type": "integer",
+          "required": false
+        }
+      },
+      "response": {
+        "id": {
+          "type": "string",
+          "required": true
+        }
+      },
+      "deprecated": false
+    }
+  },
+  "documents": {
+    "behavior": "Behavior details for this version are unavailable.",
+    "changelog": "Undocumented changes may affect existing callers.",
+    "migration": "No migration details have been published."
+  }
+}
